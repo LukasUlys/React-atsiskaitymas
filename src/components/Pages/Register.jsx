@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-function Login() {
+function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleEmailChange = (event) => {
@@ -13,14 +14,21 @@ function Login() {
     setPassword(event.target.value);
   };
 
+  const handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
 
-    if (email === 'user@example.com' && password === 'password') {
-      window.location.href = '/home';
+
+    if (email === 'user@example.com') {
+      setError('Vartotojas su tokiu el. paštu jau užregistruotas');
+    } else if (password !== confirmPassword) {
+      setError('Slaptažodis nesutampa su slaptažodžio pakartojimu');
     } else {
-      setError('Neteisingas el. paštas arba slaptažodis');
+      window.location.href = '/home';
     }
   };
 
@@ -41,7 +49,7 @@ function Login() {
       </nav>
 
       <div>
-        <h1>Login</h1>
+        <h1>Register</h1>
         {error && <p>{error}</p>}
         <form onSubmit={handleSubmit}>
           <div>
@@ -64,7 +72,17 @@ function Login() {
               required
             />
           </div>
-          <button type="submit">Login</button>
+          <div>
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              value={confirmPassword}
+              onChange={handleConfirmPasswordChange}
+              required
+            />
+          </div>
+          <button type="submit">Register</button>
         </form>
       </div>
 
@@ -75,4 +93,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
