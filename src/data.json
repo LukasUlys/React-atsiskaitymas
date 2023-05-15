@@ -1,0 +1,65 @@
+{
+    "people": [
+      {
+        "id": 1,
+        "name": "Gitanas Nausėda",
+        "age": 20,
+        "occupation": "President of Lithuania",
+        "achievement": "Elected as the President in 2019"
+      },
+      {
+        "id": 2,
+        "name": "Simonas Daukantas",
+        "age": 20,
+        "occupation": "Historian",
+        "achievement": "Prominent figure of the Lithuanian National Revival"
+      },
+      {
+        "id": 3,
+        "name": "Rūta Meilutytė",
+        "age": 20,
+        "occupation": "Swimmer",
+        "achievement": "Olympic gold medalist, world record holder"
+      },
+      {
+        "id": 4,
+        "name": "Andrius Mamontovas",
+        "age": 20,
+        "occupation": "Musician",
+        "achievement": "Renowned Lithuanian rock musician, songwriter"
+      },
+      {
+        "id": 5,
+        "name": "Laura Asadauskaitė",
+        "age": 20,
+        "occupation": "Modern Pentathlete",
+        "achievement": "Olympic gold medalist, world champion"
+      },
+      {
+        "id": 6,
+        "name": "Rūta Lukoševičiūtė",
+        "age": 20,
+        "occupation": "Model",
+        "achievement": "Successful international fashion model"
+      },
+      {
+        "id": 7,
+        "name": "Arvydas Sabonis",
+        "age": 20,
+        "occupation": "Basketball player",
+        "achievement": "Basketball Hall of Fame inductee, NBA All-Star"
+      },
+      {
+        "id": 8,
+        "name": "Eglė Žvirblytė",
+        "age": 20,
+        "occupation": "Chess player",
+        "achievement": "World Junior Chess Championship winner"
+      }
+    ]
+  }
+  
+  
+  
+  
+  
